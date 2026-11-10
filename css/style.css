@@ -1,0 +1,456 @@
+
+/* =========================================
+   AURORA - LUXURY ELECTRIC CAR WEBSITE
+   01. GLOBAL SETTINGS
+========================================= */
+
+:root {
+    --color-dark: #090b0e;
+    --color-dark-soft: #11151a;
+    --color-white: #f4f5f6;
+    --color-silver: #aeb7c2;
+    --color-muted: #7d8792;
+    --color-muted2: #3f4141;
+
+    --color-blue: #9fc8df;
+    --color-blue-hover: #8cccf1;
+
+    --color-border: rgba(255, 255, 255, 0.12);
+
+    --font-main: "DM Sans", sans-serif;
+    --font-heading: "Manrope", sans-serif;
+
+    --transition: all 0.35s ease;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: min(90%, 1200px);
+    margin-inline: auto;
+}
+
+section {
+    padding: 110px 0;
+}
+
+/* Reusable text styles */
+.section-label {
+    color: var(--color-blue);
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+}
+
+.section-description {
+    color: var(--color-muted);
+    max-width: 600px;
+    margin-top: 20px;
+    line-height: 1.9;
+}
+
+/* =========================================
+   02. HEADER & NAVIGATION
+========================================= */
+.header{
+   background-color: var(--color-muted2);
+
+}
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar {
+    width: min(85%, 1400px);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 7px;
+    /* color: #11151a; */
+    color: var(--color-dark);
+}
+
+.logo span {
+    color: var(--color-dark);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--color-silver);
+    font-size: 0.78rem;
+    letter-spacing: 1px;
+    transition: var(--transition);
+    /* color: #252a30; */
+    color: var(--color-dark);
+
+}
+
+.nav-links a:hover {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: var(--color-dark-soft);
+    
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 25px;
+    border: 1px solid var(--color-white);
+    background: transparent;
+    color: var(--color-white);
+    font-size: 0.78rem;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: var(--color-white);
+    color: var(--color-dark);
+}
+
+.btn-primary {
+    background: var(--color-white);
+    color: var(--color-dark);
+}
+
+.btn-primary:hover {
+    background: var(--color-blue);
+    border-color: var(--color-blue);
+}
+
+/* Theme toggle */
+.theme-toggle,
+.menu-toggle {
+    border: none;
+    background: transparent;
+    color: var(--color-white);
+    font-size: 1.2rem;
+    padding: 8px;
+    color: var(--color-dark-soft);
+}
+
+/* Mobile menu button */
+.menu-toggle {
+    display: none;
+}
+
+/* =========================================
+   03. HERO SECTION
+========================================= */
+
+.hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 90px 20px 80px;
+    /* background:
+        radial-gradient(
+            ellipse at 70% 55%,
+            rgba(89, 116, 135, 0.16),
+            transparent 48%
+        ),
+        var(--color-dark); */
+    /* background-image: url(../image/car\ .png); */
+    background-image: url(../image/car\ 2.jpg);
+    /* background-image: url(https://cdn.wallpapersafari.com/93/70/mXEIz1.jpg); */
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: min(90%, 1200px);
+    margin: auto;
+}
+
+.hero-label {
+    color: var(--color-silver);
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    max-width: 750px;
+    font-family: var(--font-heading);
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-weight: 300;
+    line-height: 1.02;
+    letter-spacing: -4px;
+    color: var(--color-white);
+}
+
+.hero h1 span {
+    color: var(--color-blue-hover);
+}
+
+.hero-description {
+    max-width: 460px;
+    color: var(--color-muted);
+    font-size: 0.95rem;
+    line-height: 1.9;
+    margin: 25px 0 35px;
+}
+
+/* .hero-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.hero-image {
+    position: absolute;
+    right: 0;
+    bottom: 4%;
+    width: 72%;
+    max-width: 1050px;
+    z-index: 0;
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 25px 45px rgba(0, 0, 0, 0.5));
+}
+
+.hero-scroll {
+    position: absolute;
+    bottom: 35px;
+    left: 5%;
+    z-index: 3;
+    color: var(--color-muted);
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+} */
+
+.hero-bottom {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.hero-bottom p,
+.scroll-link {
+    color: var(--color-muted);
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+.scroll-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: var(--transition);
+}
+
+.scroll-link:hover {
+    color: var(--color-blue);
+}
+
+/* =========================================
+   04. RESPONSIVE HEADER & HERO
+========================================= */
+
+@media (max-width: 900px) {
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-actions .btn {
+        padding: 11px 16px;
+    }
+
+    .hero-image {
+        width: 85%;
+        opacity: 0.65;
+    }
+
+    .hero-content {
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 700px) {
+    section {
+        padding: 80px 0;
+    }
+
+    .site-header {
+        padding: 18px 0;
+    }
+
+    .navbar {
+        width: 90%;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+        letter-spacing: 5px;
+    }
+
+    .menu-toggle {
+        display: block;
+        z-index: 1002;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        min-height: 100vh;
+        padding: 110px 30px 40px;
+        background: rgba(9, 11, 14, 0.98);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px;
+        transition: right 0.4s ease;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .nav-actions .btn {
+        display: none;
+    }
+
+    .hero {
+        min-height: 850px;
+        align-items: flex-start;
+        padding-top: 170px;
+    }
+
+    .hero h1 {
+        font-size: clamp(3rem, 13vw, 5rem);
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        font-size: 0.88rem;
+    }
+
+    .hero-image {
+        width: 115%;
+        max-width: none;
+        right: -20%;
+        bottom: 10%;
+        opacity: 0.7;
+    }
+
+    .hero-scroll {
+        bottom: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    .theme-toggle {
+        display: none;
+    }
+
+    .hero-buttons {
+        align-items: stretch;
+        flex-direction: column;
+        max-width: 230px;
+    }
+}
