@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- JavaScript -->
-    <script src="js/main.js" defer></script>
+    <!-- <script src="js/main.js" defer></script> -->
   </head>
 
   <body>
@@ -45,7 +45,8 @@
         <!-- Navigation Links -->
         <ul class="nav-links" id="navLinks">
           <li>
-            <a href="#home" class="nav-link active">Home</a>
+            <!-- <a href="#home" class="nav-link active">Home</a> -->
+             <a href="#hero" class="nav-link active">Home</a>
           </li>
 
           <li>
@@ -346,60 +347,113 @@
               Details
             </button>
           </div>
+          
 
-          <!-- Gallery Images -->
+<!-- Gallery Images -->
 
-          <div class="gallery-grid">
-            <article class="gallery-item" data-category="exterior">
-              <img
-                src="./image/car3.png"
-                alt="Front view of the pearl white AURORA electric sedan"
-              />
+<div class="gallery-grid">
 
-              <div class="gallery-overlay">
-                <span>EXTERIOR</span>
-                <h3>First Impression</h3>
-              </div>
-            </article>
-
-            <article class="gallery-item" data-category="interior">
-              <img
-                src="images/aurora-interior.jpg"
-                alt="Minimal luxury interior of the AURORA electric sedan"
-              />
-
-              <div class="gallery-overlay">
-                <span>INTERIOR</span>
-                <h3>Designed Around You</h3>
-              </div>
-            </article>
-
-            <article class="gallery-item" data-category="details">
-              <img
-                src="./image/wheel car.png"
-                alt="Close-up of the silver alloy wheel design"
-              />
-
-              <div class="gallery-overlay">
-                <span>DETAILS</span>
-                <h3>Every Detail Counts</h3>
-              </div>
-            </article>
-
-            <article class="gallery-item" data-category="exterior">
-              <img
-                src="images/aurora-rear.jpg"
-                alt="Rear view of the elegant AURORA concept car"
-              />
-
-              <div class="gallery-overlay">
-                <span>EXTERIOR</span>
-                <h3>Beyond the Shape</h3>
-              </div>
-            </article>
-          </div>
+    <!-- 01. Exterior - Front -->
+    <article class="gallery-item" data-category="exterior">
+        <img
+            src="./image/car3.png"
+            alt="Front view of the pearl white AURORA electric sedan"
+        />
+        <div class="gallery-overlay">
+            <span>EXTERIOR</span>
+            <h3>First Impression</h3>
         </div>
-      </section>
+    </article>
+
+    <!-- 02. Interior -->
+    <article class="gallery-item" data-category="interior">
+        <img
+            src="./image/cabin car.png"
+            alt="Minimal luxury interior of AURORA"
+        />
+        <div class="gallery-overlay">
+            <span>INTERIOR</span>
+            <h3>Designed Around You</h3>
+        </div>
+    </article>
+
+    <!-- 03. Details - Wheel -->
+    <article class="gallery-item" data-category="details">
+        <img
+            src="./image/wheel car.png"
+            alt="Close-up of the silver alloy wheel"
+        />
+        <div class="gallery-overlay">
+            <span>DETAILS</span>
+            <h3>Every Detail Counts</h3>
+        </div>
+    </article>
+
+    <!-- 04. Exterior - Rear -->
+    <article class="gallery-item" data-category="exterior">
+        <img
+            src="./image/side car.png"
+            alt="Rear view of AURORA electric sedan"
+        />
+        <div class="gallery-overlay">
+            <span>EXTERIOR</span>
+            <h3>Beyond the Shape</h3>
+        </div>
+    </article>
+
+    <!-- 05. Exterior - Side -->
+    <!-- <article class="gallery-item" data-category="exterior">
+        <img
+            src="./image/inside car.png"
+            alt="Side profile of AURORA electric sedan"
+        />
+        <div class="gallery-overlay">
+            <span>EXTERIOR</span>
+            <h3>Elegance in Motion</h3>
+        </div>
+    </article> -->
+
+    <!-- 06. Interior - Cockpit -->
+    <article class="gallery-item" data-category="interior">
+        <img
+            src="./image/inside car.png"
+            alt="Luxury cockpit and dashboard of AURORA"
+        />
+        <div class="gallery-overlay">
+            <span>INTERIOR</span>
+            <h3>Technology Meets Comfort</h3>
+        </div>
+    </article>
+
+    <!-- 07. Details - Headlight -->
+    <article class="gallery-item" data-category="details">
+        <img
+            src="./image/headlight car.png"
+            alt="Close-up of AURORA LED headlight"
+        />
+        <div class="gallery-overlay">
+            <span>DETAILS</span>
+            <h3>Precision of Light</h3>
+        </div>
+    </article>
+
+    <!-- 08. Details - Charging -->
+    <article class="gallery-item" data-category="details">
+        <img
+            src="./image/charging.png"
+            alt="Electric charging port detail"
+        />
+        <div class="gallery-overlay">
+            <span>DETAILS</span>
+            <h3>Powering Tomorrow</h3>
+        </div>
+    </article>
+
+</div>   
+</div>
+</section>
+
+      <!-- SPECIFICATIONS SECTION -->           
 
       <!-- ==============================
              SPECIFICATIONS SECTION
@@ -597,5 +651,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js" defer></script>
   </body>
 </html>
